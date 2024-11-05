@@ -93,6 +93,11 @@ ul li a:hover {
   background-color: var(--background-color);
 }
 
+.section.secondary {
+  padding-top: 10rem; /* Padding for secondary pages */
+  padding-bottom: 5rem;
+}
+
 .section__container {
   min-height: 100vh;
   max-width: var(--max-width);
@@ -215,14 +220,22 @@ ul li a:hover {
     font-size: 1.25rem;
   }
 
+  .section.secondary {
+    padding-top: 0rem; /* Get rid of padding */
+    padding-bottom: 0rem;
+  }
+
   .section__container {
     padding: 10rem 1rem 5rem 1rem;
     text-align: center;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .image {
-    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .action__btns {
