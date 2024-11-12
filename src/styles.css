@@ -279,3 +279,29 @@ footer p {
     margin-left: auto;
     margin-right: auto;
 }
+
+.full-width-divider {
+  grid-column: 1 / -1;
+  width: 100%;
+  border: none;
+  border-top: 1px solid var(--text-light);
+}
+
+.download-container {
+  margin-top: 1rem;
+}
+
+.download-button {
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: var(--primary-color-dark);
+}
